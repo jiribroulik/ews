@@ -58,7 +58,7 @@ func BuildTextEmail(from string, to []string, subject string, body []byte) ([]by
 	m := new(Message)
 	m.ItemClass = "IPM.Note"
 	m.Subject = subject
-	m.Body.BodyType = "Text"
+	m.Body.BodyType = "HTML"
 	m.Body.Body = body
 	m.Sender.Mailbox.EmailAddress = from
 	mb := make([]Mailbox, len(to))

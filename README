@@ -12,7 +12,8 @@ usage:
 	}
 	resp, err := ews.Issue(
 		"https://exhange.server.com/ews/Exchange.asmx",
-		"domain\\username",
+                "domain",
+		"username",
 		"password",
 		b)
 	if err != nil {
